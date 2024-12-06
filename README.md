@@ -1,7 +1,7 @@
-### <h1 align="center">Zsh theme</h1>
+### <h1>Zsh theme</h1>
 ![Terminal](https://raw.githubusercontent.com/OreaSync/dotfiles/main/assets/terminal.png) 
 
-### <h1 align="center">Plugins</h1>
+### <h1>Plugins</h1>
 ```
 Zsh:
 - zsh-syntax-highlighting
