@@ -1,0 +1,15 @@
+require("lazy").setup({
+    "nvim-tree/nvim-web-devicons",
+    "nvim-tree/nvim-tree.lua",
+    "nvim-lualine/lualine.nvim",
+    "nvim-treesitter/nvim-treesitter",
+    "akinsho/bufferline.nvim",
+    "xiyaowong/transparent.nvim",
+    {'nvim-telescope/telescope.nvim', dependencies = 'nvim-lua/plenary.nvim'},
+    "numToStr/Comment.nvim",
+    "folke/tokyonight.nvim",
+    {"akinsho/toggleterm.nvim", version = "*"},
+    "neovim/nvim-lspconfig",
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+})

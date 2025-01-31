@@ -1,9 +1,13 @@
-### <h1>Zsh theme</h1>
-![Terminal](https://raw.githubusercontent.com/OreaSync/dotfiles/main/assets/terminal.png) 
-
-### <h1>Plugins</h1>
+### <h1>Nvim plugins</h1>
 ```
-Zsh:
-- zsh-syntax-highlighting
-- zsh-autosuggestions
+- Neovim Tree
+- Lualine
+- Neovim Treesitter
+- Bufferline 
+- Transperent
+- Telescope
+- Comment
+- ToggleTerm
+- LSPConfig
+- Mason
 ```
