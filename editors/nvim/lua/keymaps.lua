@@ -11,14 +11,15 @@ vim.keymap.set('i', '<Left>', '<NOP>', { noremap = true })
 vim.keymap.set('i', '<Right>', '<NOP>', { noremap = true })
 
 -- NEOVIM-TREE
-vim.keymap.set('n', '<c-b>', ':NvimTreeFindFile<CR>')
+vim.keymap.set('n', '<leader>e', ':Neotree float focus<CR>', { silent = true, })
 
 -- BUFFERLINE
-vim.api.nvim_set_keymap('n', '<Tab>', ':bnext<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<S-Tab>', ':bprev<CR>', { noremap = true, silent = true })
-vim.keymap.set("n", "<C-i>", "<Nop>")
-vim.keymap.set("n", "<C-o>", "<Nop>")
+vim.keymap.set('n', '<Tab>', ':bnext<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<S-Tab>', ':bprev<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<S-c>', ':BufferLineCloseOthers<CR>', { noremap = true, silent = true })
 
+-- SPLIT
+vim.keymap.set('n', '<leader>]', ':vsp<CR>', { noremap = true, silent = true })
 
 -- TELESCOPE
 vim.keymap.set('n', '<leader>f', builtin.find_files)
@@ -26,7 +27,10 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep)
 vim.keymap.set('n', '<leader>fb', builtin.buffers)
 vim.keymap.set('n', '<leader>fh', builtin.help_tags)
 vim.keymap.set('n', '<leader>cs', builtin.colorscheme, {})
+vim.keymap.set('n', '<leader>t', ':TodoTelescope<CR>')
 
 -- TOGGLETERM
-vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>ToggleTerm direction=float<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("t", "<leader>q", [[<cmd>ToggleTerm<CR>]], { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>g", ":ToggleTerm<CR>", { noremap = true, silent = true })
+vim.keymap.set("t", "<leader>q", "<cmd>ToggleTerm<CR>", { noremap = true, silent = true })
+
+vim.keymap.set('n', '<leader>a', '<Plug>RustHoverAction')

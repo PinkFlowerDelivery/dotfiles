@@ -13,7 +13,6 @@ vim.o.smarttab = true -- Automatic tab at the beginning of the line
 vim.o.smartindent = true -- Automatic creation of indents when writing code
 vim.o.scrolloff = 10 -- Keeps lines visible around the cursor while scrolling
 vim.o.ruler = true -- Shows the current cursor position
-vim.o.mouse = 'r' -- Enable mouse for scrolling
 vim.o.hlsearch = true -- Highlights all matches to the current search query
 vim.o.incsearch = true -- Enables incremental search
 vim.o.ignorecase = true -- Ignore case when searching

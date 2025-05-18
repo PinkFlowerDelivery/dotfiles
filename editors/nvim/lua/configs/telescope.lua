@@ -1,14 +1,16 @@
 require('telescope').setup({
     defaults = {
-        layout_strategy = 'horizontal',
         path_display = { "truncate" },
-        file_ignore_patterns = { "target" },
-        layout_config = {
-            prompt_position = 'top',
-            preview_cutoff = 0,
-            preview_width = 0,
-            width = 0.5,
-            height = 0.6,
+        file_ignore_patterns = { "target", "%.git", "node_modules", "__pycache__" },
+        preview = true,
+        vimgrep_arguments = {
+            "rg",
+            "--color=never",
+            "--no-heading",
+            "--with-filename",
+            "--line-number",
+            "--column",
+            "--smart-case"
         },
         sorting_strategy = 'ascending',
         mappings = {
@@ -17,10 +19,9 @@ require('telescope').setup({
                 ["<C-k>"] = "move_selection_previous",
             },
             n = {
-                ["<C-j>"] = "move_selection_next", 
+                ["<C-j>"] = "move_selection_next",
                 ["<C-k>"] = "move_selection_previous",
             },
         },
     },
 })
-
